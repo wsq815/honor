@@ -26,12 +26,11 @@ export default {
     },
     created() {
         this.$axios.get('/api/seller').then((response) => {
-            response = response.data
+        	response = response.data.data
             if(ERR_OK === 0) {
                 this.seller = response
             }
         })
-        console.log(this.seller)
     },
     components: {
         'v-header': header
