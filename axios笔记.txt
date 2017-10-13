@@ -1,0 +1,13 @@
+axios在单文件组件的基本使用
+
+下载包：npm install --save-dev axios
+
+引入：import axios form 'axios'
+
+使用：Vue.prototype.$axios = axios
+	  
+	  created() {
+	  	this.$axios.get(url).then((response) => {
+	  		xx = resonse.data
+	  	})
+	  }
